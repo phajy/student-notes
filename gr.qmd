@@ -1,0 +1,72 @@
+# General Relativity
+
+Here are some notes and answers to student questions.
+
+## 2023 A2
+
+### Part (b)
+
+Part (b) states that you have made some measurements of $H(z)$ and want to determine the equation of state of the Universe, with the cosmological constant being regarded as a dark energy component of the material. The question is to find an expression for the density and pressure of the Universe in terms of $H(z)$.
+
+The FRW equations are on the formula sheet and if we take $\Lambda$ to be a matter field we can absorb it into the definitions of $\rho$ and $P$ [^1]. So we get
+
+[^1]: See §10.1.2 of the lectures notes, "If we wish, we can lose the $\Lambda$ term by absorbing it into the stress-energy tensor as a component of the mass density of the Universe, with this strange equation of state."
+
+$$
+\begin{aligned}
+H^2 + \frac{k}{a^2} &= \frac{8\pi}{3} \rho \\
+-qH^2 &= -\frac{4\pi}{3}(\rho + 3P) \\
+\dot{\left( \rho a^3 \right)} &= -P\dot{\left( a^3 \right)}
+\end{aligned}
+$$
+
+We can rearrange the first of these to get the density
+$$
+\rho = \frac{3}{8\pi} H^2 \left( 1 + \frac{k}{a^2H^2} \right)
+$$
+
+The $k$ term is expected to be small since the Universe is known to be quite flat, be we can show its dependence on $z$ and $H(z)$ by writing it as
+$$
+\frac{k}{a^2H^2} = \frac{k}{a_0^2} \frac{(1+z)^2}{H^2} .
+$$
+
+Now for the pressure we can use either of the other two expressions, but since we have derived an expression for $q$ earlier, it’s perhaps simplest to start from
+$$
+\begin{aligned}
+qH^2 &= \frac{4\pi}{3}(\rho + 3P) \\
+P &= \frac{qH^2}{4\pi} - \frac{\rho}{3} \\
+&= \frac{qH^2}{4\pi} - \frac{1}{8\pi} H^2 \left( 1 + \frac{k}{a^2H^2} \right) \\
+&= \frac{H^2}{4\pi} \left( q - \frac{1}{2} - \frac{k}{2a^2H^2} \right) \\
+&= \frac{H^2}{4\pi} \left( \frac{H^\prime}{H} (1+z) - \frac{3}{2} - \frac{1}{2} \frac{k}{a_0^2} \frac{(1+z)^2}{H^2} \right)
+\end{aligned}
+$$
+which gives $P$ in therms of  $H(z)$ and $z$.
+
+### Part (c)
+
+If the universe is flat, $k = 0$, so the expressions for $P$ and $\rho$ simplify to
+$$
+\begin{aligned}
+\rho &= \frac{3}{8\pi} H^2 \\
+P &= \frac{H^2}{4\pi} \left( \frac{H^\prime}{H} (1+z) - \frac{3}{2} \right)
+\end{aligned}
+$$
+
+For the power-law expression given in the question
+$$
+\frac{H^\prime}{H} = \frac{n}{1+z}
+$$
+<!--  -->
+so that
+$$
+\begin{aligned}
+\rho &= \frac{3}{8\pi} H^2 \\
+P &= \frac{n-3/2}{4\pi} H^2
+\end{aligned}
+$$
+and
+$$
+\frac{P}{\rho} = \frac{2n - 3}{3} .
+$$
+
+This means that if $n = 0$ we get the usual cosmological constant dominated result for the equation of state. If $n = 3/2$ we get the dust equation of state. If $n = 2$ we get the radiation dominated equation of state. Extracting the correct information about the equation of state therefore means being able to measure $n$ to better than about 0.1 accuracy (to distinguish dust from radiation) or 0.3 accuracy (to distinguish cosmological constant from dust). In fact at around $z = 1$ we expect a value of $n$ between 0 and 1.5 because the Universe is making the transition to its current cosmological-constant dominated expansion from the dust-dominated regime. A departure from this would be big news!

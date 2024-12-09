@@ -1,0 +1,10 @@
+# Welcome
+
+I've set up this site so I can post answers to questions in a nice format for various courses I'm teaching.
+
+- [General Relativity](gr.qmd)
+
+If you have any questions or spot any errors please let me know [Andy.Young@bristol.ac.uk](mailto:Andy.Young@bristol.ac.uk).
+
+Andy Young \
+December 2024

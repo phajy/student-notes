@@ -1,0 +1,25 @@
+project:
+  type: website
+
+execute:
+  freeze: auto
+
+website:
+  title: "Andy's Notes"
+  navbar:
+    logo: uob.jpg
+    left:
+      - href: index.qmd
+      - href: gr.qmd
+  page-footer: |
+    Copyright 2024, Andrew Young
+
+editor:
+  render-on-save: true
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    toc: true
