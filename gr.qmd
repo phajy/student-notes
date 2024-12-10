@@ -70,3 +70,16 @@ $$
 $$
 
 This means that if $n = 0$ we get the usual cosmological constant dominated result for the equation of state. If $n = 3/2$ we get the dust equation of state. If $n = 2$ we get the radiation dominated equation of state. Extracting the correct information about the equation of state therefore means being able to measure $n$ to better than about 0.1 accuracy (to distinguish dust from radiation) or 0.3 accuracy (to distinguish cosmological constant from dust). In fact at around $z = 1$ we expect a value of $n$ between 0 and 1.5 because the Universe is making the transition to its current cosmological-constant dominated expansion from the dust-dominated regime. A departure from this would be big news!
+
+## 26.2 Part (d)
+
+I'll expand on the solution a little bit. Also, a general note regarding scalars -- they can be calculated in the most convenient frame because they are invariant and hence the same in _any_ frame. The question doesn't really explain where the expression comes from but you can take a look at, e.g., [this paper by Crawford & Tereno (2002)](https://link.springer.com/article/10.1023/A:1021131401034).
+
+$$
+\begin{aligned}
+v_\text{rel}^2 &= \frac{(g_{\alpha\beta} + u_\alpha u_\beta) v^\alpha v^\beta}{(u_\alpha v^\alpha)^2} \\
+&= \frac{v_\beta v^\beta + (u_\alpha v^\alpha) (u_\beta v^\beta)}{(u_\alpha v^\alpha)^2} \\
+&= \frac{(-1) + (u_\alpha v^\alpha)^2}{(u_\alpha v^\alpha)^2} \\
+&= 1 - \frac{1}{(u_\alpha v^\alpha)^2}.
+\end{aligned}
+$$
