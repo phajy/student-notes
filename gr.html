@@ -39,8 +39,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d1b12f2568ecbe55642fee6aa00bd082.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-b2511bcbb01c2159fd96a78deb42ffd9.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-41afc036f4045670d8a63ab41900e02e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-a040cd6abc73b98b2f4c673569425434.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -153,6 +153,7 @@ window.Quarto = {
   <li><a href="#part-b" id="toc-part-b" class="nav-link" data-scroll-target="#part-b">Part (b)</a></li>
   <li><a href="#part-c" id="toc-part-c" class="nav-link" data-scroll-target="#part-c">Part (c)</a></li>
   </ul></li>
+  <li><a href="#part-d" id="toc-part-d" class="nav-link" data-scroll-target="#part-d">26.2 Part (d)</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -214,9 +215,21 @@ P &amp;= \frac{n-3/2}{4\pi} H^2
 \frac{P}{\rho} = \frac{2n - 3}{3} .
 \]</span></p>
 <p>This means that if <span class="math inline">\(n = 0\)</span> we get the usual cosmological constant dominated result for the equation of state. If <span class="math inline">\(n = 3/2\)</span> we get the dust equation of state. If <span class="math inline">\(n = 2\)</span> we get the radiation dominated equation of state. Extracting the correct information about the equation of state therefore means being able to measure <span class="math inline">\(n\)</span> to better than about 0.1 accuracy (to distinguish dust from radiation) or 0.3 accuracy (to distinguish cosmological constant from dust). In fact at around <span class="math inline">\(z = 1\)</span> we expect a value of <span class="math inline">\(n\)</span> between 0 and 1.5 because the Universe is making the transition to its current cosmological-constant dominated expansion from the dust-dominated regime. A departure from this would be big news!</p>
-
-
 </section>
+</section>
+<section id="part-d" class="level2">
+<h2 class="anchored" data-anchor-id="part-d">26.2 Part (d)</h2>
+<p>I’ll expand on the solution a little bit. Also, a general note regarding scalars – they can be calculated in the most convenient frame because they are invariant and hence the same in <em>any</em> frame. The question doesn’t really explain where the expression comes from but you can take a look at, e.g., <a href="https://link.springer.com/article/10.1023/A:1021131401034">this paper by Crawford &amp; Tereno (2002)</a>.</p>
+<p><span class="math display">\[
+\begin{aligned}
+v_\text{rel}^2 &amp;= \frac{(g_{\alpha\beta} + u_\alpha u_\beta) v^\alpha v^\beta}{(u_\alpha v^\alpha)^2} \\
+&amp;= \frac{v_\beta v^\beta + (u_\alpha v^\alpha) (u_\beta v^\beta)}{(u_\alpha v^\alpha)^2} \\
+&amp;= \frac{(-1) + (u_\alpha v^\alpha)^2}{(u_\alpha v^\alpha)^2} \\
+&amp;= 1 - \frac{1}{(u_\alpha v^\alpha)^2}.
+\end{aligned}
+\]</span></p>
+
+
 </section>
 </section>
 
@@ -461,7 +474,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/phajy\.github\.io\/student-notes\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
